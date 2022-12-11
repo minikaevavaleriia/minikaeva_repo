@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/classwork/30_09_tasks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework1/homework1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework2/homework2_str.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework3/homework3_ifelse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework4/homework4_loops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework5/homework5_lists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework6/homework6_dictionaries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework7_sets/homework7_sets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework8_functions/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework9_functions_part2/functions_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw10_random_time/random_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw11_module/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw11_module/module.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw12_generators/generator1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw12_generators/generator2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw12_generators/generator3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw12_generators/generator4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw13_decorators/decorators1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw13_decorators/decorators2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw13_decorators/decorators3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw14_files/file1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw14_files/file2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw14_files/file3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw14_files/file4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw14_files/task4_text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw15_lambda/lambda1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw15_lambda/lambda2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw15_lambda/lambda3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw16_exceptions/exception1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw16_exceptions/exception2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw16_exceptions/exception3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw17_inheritance/task1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw17_inheritance/task2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw17_inheritance/task3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw18_incapsulation/main1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw18_incapsulation/task1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw18_incapsulation/task2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw19_composition/task1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw20_polimorphysm/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw20_polimorphysm/task1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw20_polimorphysm/task2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw21_methods/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/heroes/hero.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/cooker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/cupboard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/hummer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/jam.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/nails.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/photoalbum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/items/items_in_room/wood.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/locations/location.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zombie_story_game/test.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2IlO9KrAerRi8mkzvWummclj6Mo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sirius/minikaeva_repo"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="minikaeva_repo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="" />
+      <created>1670752550938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670752550938</updated>
+    </task>
+    <servers />
+  </component>
+</project>
