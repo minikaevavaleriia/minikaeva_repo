@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="OS_module_hw">
-      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/SYSTEM_OS_HW/2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/файл, чтобы залились пусты папки.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/num_but.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,13 +25,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sirius/minikaeva_repo&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sirius/minikaeva_repo",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -157,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675846331210</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="OS_module_hw">
+      <created>1675846849463</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1675846849463</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
