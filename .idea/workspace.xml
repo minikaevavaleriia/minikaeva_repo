@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="calculator">
-      <change afterPath="$PROJECT_DIR$/CALCULATOR/icons/myicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CALCULATOR/act_but.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/act_but.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CALCULATOR/num_but.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/num_but.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CALCULATOR/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,14 +26,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/sirius/minikaeva_repo/CALCULATOR/icons",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sirius/minikaeva_repo/CALCULATOR/icons&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CALCULATOR/icons" />
@@ -188,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675941572262</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="calculator">
+      <created>1675945713835</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675945713835</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

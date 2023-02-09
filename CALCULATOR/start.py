@@ -2,10 +2,11 @@ import sys
 import os
 from pathlib import Path
 
-from PyQt6.QtCore import QDir
+
+from PyQt6.QtCore import QDir, Qt
 from PyQt6.QtGui import QIcon, QPalette, QBrush
 from PyQt6.QtCore import QSize, pyqtSlot
-from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QGridLayout
+from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QGridLayout, QVBoxLayout, QLineEdit
 
 from CALCULATOR.act_but import ActionButton
 from CALCULATOR.num_but import NumberButton
@@ -20,106 +21,89 @@ class MainWindow(QMainWindow):
         # окно
         self.setWindowTitle("INSTACALC")
         self.setFixedSize(QSize(720, 720))
-        self.setContentsMargins(10, 20, 10, 20)
+        # self.setContentsMargins(10, 20, 10, 20)
 
 
         # дисплей
-        self.label = QLabel('Введите значение')
-        self.label.setStyleSheet('background-color: lightpink;'
-                                 'border: 1px solid black;')
-        self.label.setFixedSize(680, 100)
-        self.label.move(-300, 0)
+        self.label = QLineEdit()
+        self.label.setFixedSize(520, 100)
+        self.label.setAlignment(Qt.AlignmentFlag.AlignRight)
+        self.label.setPlaceholderText('Enter your problem...')
+        self.label.setClearButtonEnabled(True)
+
 
 
         #цифры
         self.number_1 = NumberButton('1', 1, self.label)
-        self.number_1.setFixedSize(175, 50)
         self.number_1.clicked.connect(lambda: self.number_was_clicked(self.number_1))
 
         self.number_2 = NumberButton('2', 2, self.label)
-        self.number_2.setFixedSize(175, 50)
         self.number_2.clicked.connect(lambda: self.number_was_clicked(self.number_2))
 
         self.number_3 = NumberButton('3', 3, self.label)
-        self.number_3.setFixedSize(175, 50)
         self.number_3.clicked.connect(lambda: self.number_was_clicked(self.number_3))
 
         self.number_4 = NumberButton('4', 4, self.label)
-        self.number_4.setFixedSize(175, 50)
         self.number_4.clicked.connect(lambda: self.number_was_clicked(self.number_4))
 
         self.number_5 = NumberButton('5', 5, self.label)
-        self.number_5.setFixedSize(175, 50)
         self.number_5.clicked.connect(lambda: self.number_was_clicked(self.number_5))
 
         self.number_6 = NumberButton('6', 6, self.label)
-        self.number_6.setFixedSize(175, 50)
         self.number_6.clicked.connect(lambda: self.number_was_clicked(self.number_6))
 
         self.number_7 = NumberButton('7', 7, self.label)
-        self.number_7.setFixedSize(175, 50)
         self.number_7.clicked.connect(lambda: self.number_was_clicked(self.number_7))
 
         self.number_8 = NumberButton('8', 8, self.label)
-        self.number_8.setFixedSize(175, 50)
         self.number_8.clicked.connect(lambda: self.number_was_clicked(self.number_8))
 
         self.number_9 = NumberButton('9', 9, self.label)
-        self.number_9.setFixedSize(175, 50)
         self.number_9.clicked.connect(lambda: self.number_was_clicked(self.number_9))
 
         self.number_0 = NumberButton('0', 0, self.label)
-        self.number_0.setFixedSize(175, 50)
         self.number_0.clicked.connect(lambda: self.number_was_clicked(self.number_0))
 
 
         #кнопки с действиями
         self.action_AC = ActionButton('AC', 'del', self.label)
-        self.action_AC.setFixedSize(175, 50)
         self.action_AC.clicked.connect(lambda: self.action_was_clicked(self.action_AC))
 
         self.action_MS = ActionButton('MS', 'save', self.label)
-        self.action_MS.setFixedSize(175, 50)
         self.action_MS.clicked.connect(lambda: self.action_was_clicked(self.action_MS))
 
         self.action_power = ActionButton('^', 'pow', self.label)
-        self.action_power.setFixedSize(175, 50)
         self.action_power.clicked.connect(lambda: self.action_was_clicked(self.action_power))
 
         self.action_div = ActionButton('/', 'div', self.label)
-        self.action_div.setFixedSize(175, 50)
         self.action_div.clicked.connect(lambda: self.action_was_clicked(self.action_div))
 
         self.action_multiply = ActionButton('*', 'multiply', self.label)
-        self.action_multiply.setFixedSize(175, 50)
         self.action_multiply.clicked.connect(lambda: self.action_was_clicked(self.action_multiply))
 
         self.action_sub = ActionButton('-', 'sub', self.label)
-        self.action_sub.setFixedSize(175, 50)
         self.action_sub.clicked.connect(lambda: self.action_was_clicked(self.action_sub))
 
         self.action_add = ActionButton('+', 'add', self.label)
-        self.action_add.setFixedSize(175, 50)
         self.action_add.clicked.connect(lambda: self.action_was_clicked(self.action_add))
 
         self.action_eq = ActionButton('=', 'eq', self.label)
-        self.action_eq.setFixedSize(175, 50)
         self.action_eq.clicked.connect(lambda: self.action_was_clicked(self.action_eq))
 
         self.action_MR = ActionButton('MR', 'insert', self.label)
-        self.action_MR.setFixedSize(175, 50)
         self.action_MR.clicked.connect(lambda: self.action_was_clicked(self.action_MR))
 
         self.action_dot = ActionButton('.', 'dot', self.label)
-        self.action_dot.setFixedSize(175, 50)
         self.action_dot.clicked.connect(lambda: self.action_was_clicked(self.action_dot))
+
 
 
         #кнопки с цифрами располагаю
         self.layout = QGridLayout()
+        # self.layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # добавляю дисплей
-        self.layout.addWidget(self.label, 0, 0)
+        self.layout.addWidget(self.label)
 
         # расставляю цифры
         self.layout.addWidget(self.number_7, 2, 0, 1, 1)
@@ -152,13 +136,18 @@ class MainWindow(QMainWindow):
         self.layout.addWidget(self.action_dot, 5, 2)
         self.layout.addWidget(self.action_MR, 5, 3)
 
+        #РАССТОЯНИЕ МЕЖДУ ЭЛЕМЕНТАМИ И ПИКСЕЛИ ОТ КРАЕВ ДО СЛОЯ НЕ ТРОГАААААТЬ!!!
+        self.layout.setContentsMargins(100, 52, 100, 40)
+        self.layout.setHorizontalSpacing(53)
+        # self.layout.setVerticalSpacing(3)
+
+
         # создаю контейнер, в него лейаут и контейнер - центральный виджет
         self.container = QWidget()
         self.container.setLayout(self.layout)
+
+        # self.container.setContentsMargins()
         self.setCentralWidget(self.container)
-
-
-
 
     @pyqtSlot()
     def number_was_clicked(self, button):
@@ -179,20 +168,24 @@ def main():
 
     window = MainWindow()
     window.setWindowIcon(icon)
+
     window.show()
 
     app.setStyleSheet("""
-        QWidget {
-            background-color: "pink";
-            color: "black";
+    
+        QLineEdit {
+            background-color: rgba(255, 0, 0, 0.4);
+            font-family: 'Lucida Console', Monaco, monospace;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 50%;
         }
-        QPushButton {
-            font-size: 16px;
-            background-color: "lightpink"
+        
+        QMainWindow {
+            background-image: url("icons:myicon.png");
         }
-        MainWindow {
-            background-color: "white";
-        }
+        
+        
     """)
 
 
