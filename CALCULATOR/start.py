@@ -1,24 +1,31 @@
 import sys
+import os
+from pathlib import Path
 
-from PyQt6.QtCore import Qt
-from PyQt6.QtCore import QSize, Qt, pyqtSlot
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QLineEdit, QLabel, QVBoxLayout, QWidget, QGridLayout
+from PyQt6.QtCore import QDir
+from PyQt6.QtGui import QIcon, QPalette, QBrush
+from PyQt6.QtCore import QSize, pyqtSlot
+from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QGridLayout
 
 from CALCULATOR.act_but import ActionButton
 from CALCULATOR.num_but import NumberButton
+
+CURRENT_DIRECTORY = Path(__file__).resolve().parent
 
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
+        # окно
         self.setWindowTitle("INSTACALC")
         self.setFixedSize(QSize(720, 720))
         self.setContentsMargins(10, 20, 10, 20)
 
+
         # дисплей
         self.label = QLabel('Введите значение')
-        self.label.setStyleSheet('background-color: pink;'
+        self.label.setStyleSheet('background-color: lightpink;'
                                  'border: 1px solid black;')
         self.label.setFixedSize(680, 100)
         self.label.move(-300, 0)
@@ -129,6 +136,7 @@ class MainWindow(QMainWindow):
 
         self.layout.addWidget(self.number_0, 5, 1)
 
+
         # расставляю кнопки с действиями
         self.layout.addWidget(self.action_AC, 1,  0)
         self.layout.addWidget(self.action_MS, 1,  1)
@@ -144,13 +152,13 @@ class MainWindow(QMainWindow):
         self.layout.addWidget(self.action_dot, 5, 2)
         self.layout.addWidget(self.action_MR, 5, 3)
 
-
-
+        # создаю контейнер, в него лейаут и контейнер - центральный виджет
         self.container = QWidget()
         self.container.setLayout(self.layout)
-
-
         self.setCentralWidget(self.container)
+
+
+
 
     @pyqtSlot()
     def number_was_clicked(self, button):
@@ -162,12 +170,33 @@ class MainWindow(QMainWindow):
         button.label.setText(button.text())
         print(f'{button.val} pushed!')
 
+def main():
+    app = QApplication(sys.argv)
+
+    QDir.addSearchPath("icons", os.fspath(CURRENT_DIRECTORY / "icons"))
+    icon = QIcon("icons:myicon.png")
+    assert not icon.isNull()
+
+    window = MainWindow()
+    window.setWindowIcon(icon)
+    window.show()
+
+    app.setStyleSheet("""
+        QWidget {
+            background-color: "pink";
+            color: "black";
+        }
+        QPushButton {
+            font-size: 16px;
+            background-color: "lightpink"
+        }
+        MainWindow {
+            background-color: "white";
+        }
+    """)
 
 
+    sys.exit(app.exec())
 
-app = QApplication(sys.argv)
-
-window = MainWindow()
-window.show()
-
-app.exec()
+if __name__ == "__main__":
+    main()
