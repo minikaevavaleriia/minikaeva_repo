@@ -15,14 +15,18 @@ class NumberButton(QPushButton):
         self.setFixedSize(90, 90)
         self.setStyleSheet("""
                             QPushButton {
-                                background-color: rgba(255, 0, 0, 0.4);
+                                background-color: rgba(0, 0, 0, 0.3);
                                 font-family: 'Lucida Console', Monaco, monospace;
                                 font-size: 30px;
                                 font-weight: bold;
-                                padding: 16px;
+                                border-style: solid;
+                                border-width: 2px;
+                                border-color: #FFFFFF;
                                 border-radius: 45%;
                                 text-align: center;
-                            }
+                                color: white;
+                            
+                            }          
                         
                             """)
 

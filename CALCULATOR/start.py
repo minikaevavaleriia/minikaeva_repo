@@ -28,7 +28,7 @@ class MainWindow(QMainWindow):
         self.label = QLineEdit()
         self.label.setFixedSize(520, 100)
         self.label.setAlignment(Qt.AlignmentFlag.AlignRight)
-        self.label.setPlaceholderText('Enter your problem...')
+        self.label.setPlaceholderText('')
         self.label.setClearButtonEnabled(True)
 
 
@@ -163,7 +163,7 @@ def main():
     app = QApplication(sys.argv)
 
     QDir.addSearchPath("icons", os.fspath(CURRENT_DIRECTORY / "icons"))
-    icon = QIcon("icons:myicon.png")
+    icon = QIcon("icons:myicon1.png")
     assert not icon.isNull()
 
     window = MainWindow()
@@ -174,15 +174,19 @@ def main():
     app.setStyleSheet("""
     
         QLineEdit {
-            background-color: rgba(255, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.3);
             font-family: 'Lucida Console', Monaco, monospace;
             font-size: 30px;
             font-weight: bold;
             border-radius: 50%;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #FFFFFF;
+            color: white;
         }
         
         QMainWindow {
-            background-image: url("icons:myicon.png");
+            background-image: url("icons:myicon1.png");
         }
         
         
