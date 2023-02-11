@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="calculator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CALCULATOR/act_but.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/act_but.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CALCULATOR/num_but.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/num_but.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CALCULATOR/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="minikaeva_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676018869802</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="calculator">
+      <created>1676131117040</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1676131117040</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
