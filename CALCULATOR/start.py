@@ -21,8 +21,6 @@ class MainWindow(QMainWindow):
         # окно
         self.setWindowTitle("INSTACALC")
         self.setFixedSize(QSize(720, 720))
-        # self.setContentsMargins(10, 20, 10, 20)
-
 
         # дисплей
         self.label = QLineEdit()
@@ -30,8 +28,6 @@ class MainWindow(QMainWindow):
         self.label.setAlignment(Qt.AlignmentFlag.AlignRight)
         self.label.setPlaceholderText('')
         self.label.setClearButtonEnabled(True)
-
-
 
         #цифры
         self.number_1 = NumberButton('1', 1, self.label)
@@ -97,10 +93,8 @@ class MainWindow(QMainWindow):
         self.action_dot.clicked.connect(lambda: self.action_was_clicked(self.action_dot))
 
 
-
         #кнопки с цифрами располагаю
         self.layout = QGridLayout()
-        # self.layout.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # добавляю дисплей
         self.layout.addWidget(self.label)
@@ -139,25 +133,22 @@ class MainWindow(QMainWindow):
         #РАССТОЯНИЕ МЕЖДУ ЭЛЕМЕНТАМИ И ПИКСЕЛИ ОТ КРАЕВ ДО СЛОЯ НЕ ТРОГАААААТЬ!!!
         self.layout.setContentsMargins(100, 52, 100, 40)
         self.layout.setHorizontalSpacing(53)
-        # self.layout.setVerticalSpacing(3)
-
 
         # создаю контейнер, в него лейаут и контейнер - центральный виджет
         self.container = QWidget()
         self.container.setLayout(self.layout)
-
-        # self.container.setContentsMargins()
         self.setCentralWidget(self.container)
 
     @pyqtSlot()
-    def number_was_clicked(self, button):
+    def number_was_clicked(self, button):       # вывод цифры на кнопке на экран
         button.label.setText(button.text())
         print(f'{button.val} pushed!')
 
     @pyqtSlot()
-    def action_was_clicked(self, button):
+    def action_was_clicked(self, button):       # вывод действия на кнопке на экран
         button.label.setText(button.text())
         print(f'{button.val} pushed!')
+
 
 def main():
     app = QApplication(sys.argv)
@@ -172,7 +163,6 @@ def main():
     window.show()
 
     app.setStyleSheet("""
-    
         QLineEdit {
             background-color: rgba(0, 0, 0, 0.3);
             font-family: 'Lucida Console', Monaco, monospace;
@@ -188,10 +178,7 @@ def main():
         QMainWindow {
             background-image: url("icons:myicon1.png");
         }
-        
-        
     """)
-
 
     sys.exit(app.exec())
 
