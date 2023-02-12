@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.memory = []
-        self.setMouseTracking(True)
+        # self.setMouseTracking(True)
 
         # окно
         self.setWindowTitle("INSTACALC")

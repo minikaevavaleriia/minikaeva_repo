@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="calculator">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CALCULATOR/buttons/act_but.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/buttons/act_but.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CALCULATOR/buttons/num_but.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/buttons/num_but.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CALCULATOR/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -270,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676206658722</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="calculator">
+      <created>1676206669982</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676206669982</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
