@@ -5,8 +5,8 @@ from pathlib import Path
 import re
 
 from PyQt5.QtMultimedia import QSound
-from PyQt6.QtCore import QDir, Qt, QUrl
-from PyQt6.QtGui import QIcon
+from PyQt6.QtCore import QDir, Qt, QUrl, QPropertyAnimation, QTimer
+from PyQt6.QtGui import QIcon, QColor
 from PyQt6.QtCore import QSize
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QGridLayout
@@ -23,7 +23,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.memory = []
-        # self.setMouseTracking(True)
+        self.setMouseTracking(True)
 
         # окно
         self.setWindowTitle("INSTACALC")
@@ -39,7 +39,6 @@ class MainWindow(QMainWindow):
         self.player = QMediaPlayer()
         self.audio_output = QAudioOutput()
         self.player.setAudioOutput(self.audio_output)
-
 
 
         #цифры
@@ -118,6 +117,8 @@ class MainWindow(QMainWindow):
         self.action_dot.clicked.connect(lambda: self.dot(self.action_dot))
         self.action_dot.clicked.connect(lambda: self.music(self.action_dot.name))
 
+
+        #animation
 
         #кнопки с цифрами располагаю
         self.layout = QGridLayout()
@@ -254,18 +255,19 @@ class MainWindow(QMainWindow):
                 self.player.play()
 
 
-
 def check_power(screen):                        # доделать для отрицательных чисел и отрицательных степеней!!!
-    match = r'\d+\^\d+'
+    match = r'-?\d+\^-?\d+'
     look_for_power = re.findall(match, screen)
 
     if look_for_power:
         for i in look_for_power:
-            x = re.findall(r'-?\d+', i[0])
+            # print(i)
+            x = re.findall(r'-?\d+', i)
             a = f'{x[0]}'
-
+            # print('a ', a)
             y = re.findall(r'-?\d+$', i)
             b = f'{y[0]}'
+            # print('b ', b)
 
             ans = pow(float(a), float(b))
             screen = screen.replace(i, str(ans))
@@ -309,6 +311,10 @@ def main():
             border-color: #FFFFFF;
             color: white;
         }
+        
+        QLabel::hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }   
         
         QLabel{
             background-color: rgba(0, 0, 0, 0.4);
