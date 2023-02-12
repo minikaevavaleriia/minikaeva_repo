@@ -9,8 +9,8 @@ from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import QSize
 from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QGridLayout
 
-from CALCULATOR.act_but import ActionButton
-from CALCULATOR.num_but import NumberButton
+from CALCULATOR.buttons.act_but import ActionButton
+from CALCULATOR.buttons.num_but import NumberButton
 
 CURRENT_DIRECTORY = Path(__file__).resolve().parent
 
@@ -156,11 +156,9 @@ class MainWindow(QMainWindow):
     def equals(self):
         screen = self.label_result.text()
         power_checked = check_power(screen)
-        print('!!!' + power_checked)
 
         try:
             answer = eval(power_checked)
-            print(answer)
             self.label_result.setText(str(answer))
 
         except:
@@ -201,7 +199,6 @@ def check_power(screen):                        # доделать для отр
 
     if look_for_power:
         for i in look_for_power:
-            print('lalal ' + i)
             x = re.findall(r'-?\d+', i[0])
             a = f'{x[0]}'
 
@@ -209,10 +206,7 @@ def check_power(screen):                        # доделать для отр
             b = f'{y[0]}'
 
             ans = pow(float(a), float(b))
-
             screen = screen.replace(i, str(ans))
-
-            print('new screen ' + screen)
 
     return screen
 
