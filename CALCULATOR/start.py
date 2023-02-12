@@ -4,10 +4,13 @@ from pathlib import Path
 
 import re
 
-from PyQt6.QtCore import QDir, Qt
+from PyQt5.QtMultimedia import QSound
+from PyQt6.QtCore import QDir, Qt, QUrl
 from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import QSize
+from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QGridLayout
+
 
 from CALCULATOR.buttons.act_but import ActionButton
 from CALCULATOR.buttons.num_but import NumberButton
@@ -20,7 +23,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.memory = []
-        self.setMouseTracking(True)
+        # self.setMouseTracking(True)
 
         # окно
         self.setWindowTitle("INSTACALC")
@@ -31,6 +34,12 @@ class MainWindow(QMainWindow):
         self.label_result = QLabel(self.result)
         self.label_result.setFixedSize(520, 100)
         self.label_result.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        #music
+        self.player = QMediaPlayer()
+        self.audio_output = QAudioOutput()
+        self.player.setAudioOutput(self.audio_output)
+
 
 
         #цифры
@@ -47,47 +56,67 @@ class MainWindow(QMainWindow):
 
 
         self.number_1.clicked.connect(lambda: self.button_was_clicked(self.number_1.name))
+        self.number_1.clicked.connect(lambda: self.music(self.number_1.name))
         self.number_2.clicked.connect(lambda: self.button_was_clicked(self.number_2.name))
+        self.number_2.clicked.connect(lambda: self.music(self.number_2.name))
         self.number_3.clicked.connect(lambda: self.button_was_clicked(self.number_3.name))
+        self.number_3.clicked.connect(lambda: self.music(self.number_3.name))
         self.number_4.clicked.connect(lambda: self.button_was_clicked(self.number_4.name))
+        self.number_4.clicked.connect(lambda: self.music(self.number_4.name))
         self.number_5.clicked.connect(lambda: self.button_was_clicked(self.number_5.name))
+        self.number_5.clicked.connect(lambda: self.music(self.number_5.name))
         self.number_6.clicked.connect(lambda: self.button_was_clicked(self.number_6.name))
+        self.number_6.clicked.connect(lambda: self.music(self.number_6.name))
         self.number_7.clicked.connect(lambda: self.button_was_clicked(self.number_7.name))
+        self.number_7.clicked.connect(lambda: self.music(self.number_7.name))
         self.number_8.clicked.connect(lambda: self.button_was_clicked(self.number_8.name))
+        self.number_8.clicked.connect(lambda: self.music(self.number_8.name))
         self.number_9.clicked.connect(lambda: self.button_was_clicked(self.number_9.name))
+        self.number_9.clicked.connect(lambda: self.music(self.number_9.name))
         self.number_0.clicked.connect(lambda: self.button_was_clicked(self.number_0.name))
+        self.number_0.clicked.connect(lambda: self.music(self.number_0.name))
 
 
         #кнопки с действиями
         self.action_AC = ActionButton('AC', 'del')
         self.action_AC.clicked.connect(lambda: self.button_was_clicked(self.action_AC.name))
+        self.action_AC.clicked.connect(lambda: self.music(self.action_AC.name))
 
         self.action_MS = ActionButton('MS', 'save')
         self.action_MS.clicked.connect(lambda: self.memory_save(self.action_MS.name))
+        self.action_MS.clicked.connect(lambda: self.music(self.action_MS.name))
 
         self.action_power = ActionButton('^', 'pow')
         self.action_power.clicked.connect(lambda: self.button_was_clicked(self.action_power.name))
+        self.action_power.clicked.connect(lambda: self.music(self.action_power.name))
 
         self.action_div = ActionButton('/', 'div')
         self.action_div.clicked.connect(lambda: self.button_was_clicked(self.action_div.name))
+        self.action_div.clicked.connect(lambda: self.music(self.action_div.name))
 
         self.action_multiply = ActionButton('*', 'multiply')
         self.action_multiply.clicked.connect(lambda: self.button_was_clicked(self.action_multiply.name))
+        self.action_multiply.clicked.connect(lambda: self.music(self.action_multiply.name))
 
         self.action_sub = ActionButton('-', 'sub')
         self.action_sub.clicked.connect(lambda: self.button_was_clicked(self.action_sub.name))
+        self.action_sub.clicked.connect(lambda: self.music(self.action_sub.name))
 
         self.action_add = ActionButton('+', 'add')
         self.action_add.clicked.connect(lambda: self.button_was_clicked(self.action_add.name))
+        self.action_add.clicked.connect(lambda: self.music(self.action_add.name))
 
         self.action_eq = ActionButton('=', 'eq')
         self.action_eq.clicked.connect(lambda: self.equals())
+        self.action_eq.clicked.connect(lambda: self.music(self.action_eq.name))
 
         self.action_MR = ActionButton('MR', 'insert')
         self.action_MR.clicked.connect(lambda: self.memory_read(self.action_MR))
+        self.action_MR.clicked.connect(lambda: self.music(self.action_MR.name))
 
         self.action_dot = ActionButton('.', 'dot')
         self.action_dot.clicked.connect(lambda: self.dot(self.action_dot))
+        self.action_dot.clicked.connect(lambda: self.music(self.action_dot.name))
 
 
         #кнопки с цифрами располагаю
@@ -171,7 +200,7 @@ class MainWindow(QMainWindow):
             pass
         else:
             self.label_result.setText(f'{screen}.')
-        print(f'{button} pushed!')
+        print(f'{button.name} pushed!')
 
 
     def memory_save(self, button):
@@ -187,10 +216,43 @@ class MainWindow(QMainWindow):
     def memory_read(self, button):
         screen = self.label_result.text()
         if self.memory:
-            self.label_result.setText(f'{screen}{self.memory.pop()}')
+            if not self.label_result.text() == '0':
+                self.label_result.setText(f'{screen}{self.memory.pop()}')
+            else:
+                self.label_result.setText(f'{self.memory.pop()}')
         else:
             self.label_result.setText("MEMORY IS EMPTY")
-        print(f'{button} pushed!')
+        print(f'{button.name} pushed!')
+
+    def music(self, button):
+        filenames = {'1': "/home/sirius/Загрузки/sounds/hlopai.mp3",
+                     '2': "/home/sirius/Загрузки/sounds/dengi_dengi.mp3",
+                     '3': "/home/sirius/Загрузки/sounds/muz_kupil_ready.mp3",
+                     '4': "/home/sirius/Загрузки/sounds/instasamka_ready.mp3",
+                     '5': "/home/sirius/Загрузки/sounds/pahnu_dengami.mp3",
+                     '6': "/home/sirius/Загрузки/sounds/i_chto_ready.mp3",
+                     '7': "/home/sirius/Загрузки/sounds/na_balance_trilion.mp3",
+                     '8': "/home/sirius/Загрузки/sounds/zabery_ice.mp3",
+                     '9': "/home/sirius/Загрузки/sounds/lipsi_ha_ready.mp3",
+                     '0': "/home/sirius/Загрузки/sounds/kak_dela_schenok.mp3",
+                     '=': "/home/sirius/Загрузки/sounds/zadenigida.mp3",
+                     'AC': "/home/sirius/Загрузки/sounds/eshe_raz.mp3",
+                     'MS': "/home/sirius/Загрузки/sounds/gucci_na_ushi.mp3",
+                     'MR': "/home/sirius/Загрузки/sounds/zhena_milionera.mp3",
+                     '/': "/home/sirius/Загрузки/sounds/bloody_party.mp3",
+                     '+': "/home/sirius/Загрузки/sounds/dadada_bitch.mp3",
+                     '-': "/home/sirius/Загрузки/sounds/davai_mne_dengi_nesi.mp3",
+                     '*': "/home/sirius/Загрузки/sounds/da_ya_tak_bogata.mp3",
+                     '^': "/home/sirius/Загрузки/sounds/money_ha.mp3",
+                     '.': "/home/sirius/Загрузки/sounds/juicy_ready.mp3"
+                     }
+
+        for i in filenames:
+            if i == button:
+                self.player.setSource(QUrl.fromLocalFile(filenames[f'{button}']))
+                self.audio_output.setVolume(80)
+                self.player.play()
+
 
 
 def check_power(screen):                        # доделать для отрицательных чисел и отрицательных степеней!!!
@@ -220,6 +282,18 @@ def main():
 
     window = MainWindow()
     window.setWindowIcon(icon)
+    window.setStyleSheet("""
+        QPushButton:hover {
+            background-color: "red";
+        }
+        QPushButton:focus {
+            background-color: "blue";
+        }
+        QLineEdit:focus {
+            background-color: "grey";
+        }
+    
+    """)
 
     window.show()
 

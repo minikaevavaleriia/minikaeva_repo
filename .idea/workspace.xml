@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="calculator" />
+    <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="calculator">
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/bloody_party.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/da_ya_tak_bogata.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/dadada_bitch.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/davai_mne_dengi_nesi.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/dengi_dengi.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/eshe_raz.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/gucci_na_ushi.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/hlopai.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/i_chto_ready.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/instasamka_ready.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/juicy_ready.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/kak_dela_schenok.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/lipsi_ha_ready.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/money_ha.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/muz_kupil_ready.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/na_balance_trilion.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/pahnu_dengami.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/zabery_ice.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/zadenigida.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CALCULATOR/sounds/zhena_milionera.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CALCULATOR/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULATOR/start.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,14 +48,18 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sirius/minikaeva_repo/CALCULATOR/icons&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sirius/minikaeva_repo/CALCULATOR/sounds&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CALCULATOR/sounds" />
       <recent name="$PROJECT_DIR$/CALCULATOR/icons" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CALCULATOR/buttons" />
     </key>
   </component>
   <component name="RunManager">
@@ -240,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676152365357</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="calculator">
+      <created>1676189447755</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676189447755</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
