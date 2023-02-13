@@ -4,9 +4,8 @@ from pathlib import Path
 
 import re
 
-from PyQt5.QtMultimedia import QSound
-from PyQt6.QtCore import QDir, Qt, QUrl, QPropertyAnimation, QTimer
-from PyQt6.QtGui import QIcon, QColor
+from PyQt6.QtCore import QDir, Qt, QUrl
+from PyQt6.QtGui import QIcon
 from PyQt6.QtCore import QSize
 from PyQt6.QtMultimedia import QMediaPlayer, QAudioOutput
 from PyQt6.QtWidgets import QApplication, QMainWindow, QLabel, QWidget, QGridLayout
@@ -319,7 +318,7 @@ def main():
         QLabel{
             background-color: rgba(0, 0, 0, 0.4);
             font-family: 'Lucida Console', Monaco, monospace;
-            font-size: 60px;
+            font-size: 45px;
             font-weight: bold;
             border-radius: 50%;
             border-style: solid;
