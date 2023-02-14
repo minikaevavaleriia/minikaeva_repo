@@ -283,21 +283,7 @@ def main():
 
     window = MainWindow()
     window.setWindowIcon(icon)
-    window.setStyleSheet("""
-        QPushButton:hover {
-            background-color: "red";
-        }
-        QPushButton:focus {
-            background-color: "blue";
-        }
-        QLineEdit:focus {
-            background-color: "grey";
-        }
-    
-    """)
-
     window.show()
-
     app.setStyleSheet("""
         QLineEdit {
             background-color: rgba(0, 0, 0, 0.4);
