@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="calculator">
-      <change afterPath="$PROJECT_DIR$/hw24_sys_module/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw24_sys_module/2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw24_sys_module/3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw24_sys_module/4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw24_sys_module/comands.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw25_threads/1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw25_threads/2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw25_threads/3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw24_sys_module/5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw27_parsing/1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +43,7 @@
       <recent name="$PROJECT_DIR$/CALCULATOR/buttons" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3">
+  <component name="RunManager">
     <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="minikaeva_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -354,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676409152172</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="calculator">
+      <created>1676893092204</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1676893092204</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
