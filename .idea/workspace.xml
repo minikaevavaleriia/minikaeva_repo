@@ -5,8 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="012cd87a-6bdd-4886-9f88-5771427ff5ad" name="Changes" comment="hw">
-      <change afterPath="$PROJECT_DIR$/selenium/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw25_threads/4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw25_threads/files/file0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/names.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/Змея.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/Котик.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/Ляшушка.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/Олег.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/Павлин.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw26_threadpool/Собачка.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw27_parsing/charts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw27_parsing/charts_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/Кот_оригинальный0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/Кот_оригинальный1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/Кот_пиксельный0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/Кот_пиксельный1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/Кот_рандомный0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw28_http/Кот_рандомный1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw29_prpcesses/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw29_prpcesses/2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw29_prpcesses/Красим_стены" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/1/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/1/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/3/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/3/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/5/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/5/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/7/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/7/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/9/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/9/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/kek110/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/kek110/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/kek22/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/kek22/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/kek44/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/kek44/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/kek66/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/kek66/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/target/kek88/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/target/kek88/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SYSTEM_OS_HW/task4/answer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hw23_os/task4/answer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw24_sys_module/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw24_sys_module/4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw24_sys_module/5.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw24_sys_module/5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw27_parsing/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/hw27_parsing/1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +67,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sirius/minikaeva_repo&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/sirius/minikaeva_repo",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CALCULATOR/sounds" />
@@ -39,10 +82,12 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hw26_threadpool" />
+      <recent name="$PROJECT_DIR$/hw25_threads/files" />
       <recent name="$PROJECT_DIR$/CALCULATOR/buttons" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager">
     <configuration name="3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="minikaeva_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678516025280</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="hw">
+      <created>1681159560261</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1681159560261</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

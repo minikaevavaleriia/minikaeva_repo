@@ -17,3 +17,5 @@ except IndexError:
 
 if not os.path.exists(a[0] + a[1]):
     os.makedirs(a[0] + a[1])
+
+#python3 4.py --name kek --path ./

@@ -3,10 +3,8 @@
 Протестируйте скрипт на файле comands.txt
 """
 
+import os
 import sys
-
-input_ = sys.stdin
-
-with open(str(input_), 'w+') as f:
-    for i in f.readlines():
-        sys.stdin
+with open(str(sys.argv[1]), "r") as file:
+    for line in file:
+        os.system(line)
